@@ -34,10 +34,12 @@ DOKUMENTACJA
 
 
 6. Użycie Swagger UI (potrzebne konkretne uprawnienia)
+
 ![image](https://github.com/user-attachments/assets/7ce7836d-3261-4aef-b5ac-f98074bb148d)
 
 
 7. Mapowanie obiektowo-relacyjne - Hibernate oraz baza danych PostgreSQL
+
 ![image](https://github.com/user-attachments/assets/632cbb10-26dc-4a4a-b222-7d06d2ffdb96)
 ![image](https://github.com/user-attachments/assets/7bc4dd5f-d56a-4407-b3f7-a4dd46e3d0d4)
 ![image](https://github.com/user-attachments/assets/a9d1fbc9-7fa5-4931-b6de-27666bd5d123)
@@ -54,6 +56,7 @@ DOKUMENTACJA
 
 
 11. Testowanie (JUnit):
+
 ![image](https://github.com/user-attachments/assets/e5a4170d-cdfa-4a2b-bdb9-297c4201747f)
 
 
