@@ -4,7 +4,7 @@ DOKUMENTACJA
 
 ![image](https://github.com/user-attachments/assets/85e1b024-bbef-4e91-8f08-870748c61166)
 
-3. Struktura Maven wraz z strukturą projektu
+2. Struktura Maven wraz z strukturą projektu
 
 ![image](https://github.com/user-attachments/assets/d38cadcb-3d7e-44ef-a35a-e3fdc3c6e7b6)
 
