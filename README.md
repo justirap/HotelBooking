@@ -41,6 +41,8 @@ Maven – zarządzanie zależnościami i budowanie aplikacji
 
 Docker / Docker Compose – konteneryzacja bazy danych i aplikacji
 
+JUnit + Mockito + Jacoco - testy
+
 👩‍💻 Użytkownicy testowi
 Administrator
 username: admin
