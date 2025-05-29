@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: system
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: username
+                  value: user10
+              - column:
+                  name: password
+                  value: pass
+              - column:
+                  name: role
+                  value: USER
+
+
