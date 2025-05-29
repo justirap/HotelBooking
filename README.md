@@ -1,5 +1,60 @@
 DOKUMENTACJA
 
+🏨 HotelBooking – system rezerwacji hotelowych
+HotelBooking to aplikacja webowa napisana w języku Java z wykorzystaniem frameworka Spring Boot, która umożliwia użytkownikom dokonywanie rezerwacji pokojów hotelowych. System wspiera dwa typy użytkowników: administratorów i zwykłych użytkowników, z odrębnymi uprawnieniami i widokami po zalogowaniu.
+
+🎯 Główne funkcjonalności:
+
+✅ Logowanie z weryfikacją ról (ADMIN, USER) przy użyciu Spring Security
+
+🛏️ Rezerwacje pokoi z podziałem na terminy, pokoje i przypisanych użytkowników
+
+👨‍💼 Administrator ma dostęp do wszystkich danych – może przeglądać i zarządzać wszystkimi rezerwacjami
+
+🙋 Zwykły użytkownik widzi tylko swoje rezerwacje
+
+📜 Formularz logowania oraz dynamiczne przekierowanie na odpowiedni panel (admin/user)
+
+🔄 Interfejs REST API udostępniony poprzez kontrolery
+
+🧪 Swagger UI – graficzna dokumentacja i testowanie endpointów
+
+💾 Baza danych PostgreSQL zarządzana przez Liquibase, umożliwiający kontrolowane migracje danych
+
+🧱 Użyte technologie:
+
+Spring Boot – szybkie tworzenie aplikacji backendowej
+
+Spring Security – autoryzacja i kontrola ról użytkowników
+
+Spring Data JPA (Hibernate) – komunikacja z bazą danych
+
+PostgreSQL – trwałe przechowywanie danych
+
+Liquibase – migracje danych bez utraty informacji
+
+Swagger (Springdoc OpenAPI) – interaktywna dokumentacja REST API
+
+Thymeleaf – prosty silnik szablonów HTML (login + dashboard)
+
+Maven – zarządzanie zależnościami i budowanie aplikacji
+
+Docker / Docker Compose – konteneryzacja bazy danych i aplikacji
+
+👩‍💻 Użytkownicy testowi
+Administrator
+username: admin
+password: admin
+
+Użytkownik
+username: user4
+password: pass
+
+
+
+
+Szczegóły:
+
 1. Projekt postawiony na Dockerze
 
 ![image](https://github.com/user-attachments/assets/85e1b024-bbef-4e91-8f08-870748c61166)
