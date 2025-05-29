@@ -50,17 +50,17 @@ DOKUMENTACJA
 ![image](https://github.com/user-attachments/assets/b1221456-4217-41d7-8798-7c5cf924d306)
 
 
-10. Aplikacja obsługuje Liquibase do migracji bazy danych:
+9. Aplikacja obsługuje Liquibase do migracji bazy danych:
 
 ![image](https://github.com/user-attachments/assets/1280c474-52e1-4457-a7f3-4abc562518a9)
 
 
-11. Testowanie (JUnit):
+10. Testowanie (JUnit):
 
 ![image](https://github.com/user-attachments/assets/e5a4170d-cdfa-4a2b-bdb9-297c4201747f)
 
 
-Użyte wzorce:
+11. Użyte wzorce:
 
 - Warstwa serwisowa (Service Layer)
 Odzielenie logiki biznesowej od logiki kontrolera (obsługi http)
