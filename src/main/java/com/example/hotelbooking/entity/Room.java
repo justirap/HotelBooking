@@ -22,6 +22,4 @@ public class Room {
     private double pricePerNight;
     private boolean available;
 
-    @OneToMany(mappedBy = "room")
-    private List<Booking> bookings;
 }

@@ -2,6 +2,7 @@ package com.example.hotelbooking.service;
 
 
 import com.example.hotelbooking.entity.Booking;
+import com.example.hotelbooking.entity.User;
 import com.example.hotelbooking.repository.BookingRepository;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +32,10 @@ public class BookingService {
 
     public void deleteBookingById(Long id) {
         bookingRepository.deleteById(id);
+    }
+
+    public List<Booking> getBookingsByUser(User user) {
+        return bookingRepository.findByUser(user);
     }
 
     public Booking updateBooking(Long id, Booking updatedBooking) {

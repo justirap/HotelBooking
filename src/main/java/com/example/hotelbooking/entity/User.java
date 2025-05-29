@@ -30,6 +30,4 @@ public class User {
         ADMIN
     }
 
-    @OneToMany(mappedBy = "user")
-    private List<Booking> bookings;
 }

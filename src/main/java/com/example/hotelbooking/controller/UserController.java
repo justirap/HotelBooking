@@ -3,6 +3,7 @@ package com.example.hotelbooking.controller;
 import com.example.hotelbooking.entity.User;
 import com.example.hotelbooking.service.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -46,5 +47,19 @@ public class UserController {
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<User> login(@RequestBody User user) {
+        Optional<User> optionalUser = userService
+                .getAllUsers()
+                .stream()
+                .filter(u -> u.getUsername().equals(user.getUsername()) &&
+                        u.getPassword().equals(user.getPassword()))
+                .findFirst();
+
+        return optionalUser
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
     }
 }

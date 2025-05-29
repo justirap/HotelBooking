@@ -4,6 +4,7 @@ import com.example.hotelbooking.entity.User;
 import com.example.hotelbooking.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -29,15 +30,15 @@ public class UserService {
     }
 
     public User updateUser(Long id, User updatedUser) {
-        return userRepository.findById(id).map(user -> {
-            user.setUsername(updatedUser.getUsername());
-            user.setPassword(updatedUser.getPassword());
-            user.setRole(updatedUser.getRole());
-            return userRepository.save(user);
-        }).orElseThrow(() -> new RuntimeException("User not found"));
+        return null;
     }
 
     public void deleteUser(Long id) {
         userRepository.deleteById(id);
     }
+
+    public Optional<User> findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
+
 }

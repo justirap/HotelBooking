@@ -65,4 +65,5 @@ public class BookingController {
         bookingService.updateBooking(bookingId, booking);
         return ResponseEntity.ok().build();
     }
+
 }

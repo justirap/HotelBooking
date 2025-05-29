@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<h1>Witaj, <span th:text="${username}"></span> (ADMIN)</h1>
+<h2>Wszystkie rezerwacje:</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Pokój</th>
+        <th>Data zameldowania</th>
+        <th>Data wymeldowania</th>
+        <th>Użytkownik</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="booking : ${bookings}">
+        <td th:text="${booking.id}"></td>
+        <td th:text="${booking.room.number}"></td>
+        <td th:text="${booking.checkInDate}"></td>
+        <td th:text="${booking.checkOutDate}"></td>
+        <td th:text="${booking.user.username}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
